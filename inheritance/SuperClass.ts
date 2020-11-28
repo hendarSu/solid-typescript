@@ -1,15 +1,15 @@
 export class SuperClass {
-	name: string;
+	private name: string;
 
 	constructor(name?: string) {
 		this.name = name;
 	}
 
-	public print() {
-		console.log(`${this.getName()}`);
+	public getName() {
+		return this.name;
 	}
 
-	public getName() {
-		return 'This Super Class';
+	public setName(name: string) {
+		this.name = name;
 	}
 }
